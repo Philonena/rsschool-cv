@@ -5,7 +5,6 @@
 - Phone: +375(29)350-34-19
 - Email: chinarovanatalia@gmail.com
 - GitHub: Philonena
-- Telegram: @Philonena
 - Discord: Chinarova Natalia (@Philonena)
 
 ## About Me

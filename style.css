@@ -1,1 +1,161 @@
+:root {
+  --background-color: #252525;
+  --main-color: #ff7100;
+  --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  background-color: #080808;
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+
+.header-photo {
+  width: 30%;
+  min-height: 300px;
+  background-image: url(./assets/img/photo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  width: 70%;
+  align-self: center;
+}
+
+h1 {
+  display: block;
+  background-color: var(--main-color);
+  text-align: right;
+  padding: 20px;
+}
+
+.nav {
+  background-color: var(--main-color);
+  padding: 0px 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  margin-left: 20px;
+  line-height: 50px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #7a7a7a !important;
+}
+
+.main {
+  display: flex;
+}
+
+.section-left {
+  width: 30%;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.section-left a {
+  color: wheat;
+}
+
+.section-right {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+h2 {
+  color: var(--main-color);
+  display: block;
+  border-bottom: 1px solid var(--main-color);
+}
+
+pre {
+  padding: 20px;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.footer {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+  margin: 10px 20px;
+}
+
+.year, .year a {
+  margin: 0;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .header-photo {
+    width: 40%;
+  }
+
+  .header-content {
+    width: 60%;
+  }
+
+  .section-left {
+    width: 40%;
+  }
+
+  .section-right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: block;
+  }
+
+  .section-left {
+    width: 100%;
+  }
+
+  .section-right {
+    width: 100%;
+  }
+}
